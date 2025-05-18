@@ -71,4 +71,4 @@ def update(id):
 
 if __name__ == "__main__":
     # if there is some error then it will pop up on the page
-    app.run(debug=True)
+    app.run(debug=False)
