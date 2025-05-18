@@ -1,12 +1,14 @@
 body, html {
     margin: 0;
     font-family: sans-serif;
-    background-color: #BBBDE5 ;
+    background-color: lightgrey ;
 }
 
 .content {
-    margin: 0 auto;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin : 0 30% ;
+    justify-content: space-evenly;
 }
 
 table, td, th {
@@ -35,16 +37,22 @@ td {
     width: 70%;
 }
 .table_head{
-    background: linear-gradient(135deg, grey , cyan);
+    background: linear-gradient(135deg, darkgrey, gray);
     color: white;
 }
 .table_data{
-    background: linear-gradient(135deg,purple,violet, red);
-    color : white ;
+    background: linear-gradient(135deg, lightgrey , gray ) ;
+    color : black  ;
 }
 .table_data a {
-    color : white ;
+    color : black ;
 }
 .table_data a:hover {
-    color : cyan ;
+    color : white ;
 }
+.AnkurAlpha_logo{
+    align-self: center;
+    max-height: 10vh;
+    margin : 5% ;
+}
+

@@ -6,7 +6,9 @@
 
     {% block body %}
     <div class="content">
-        <h1 style="text-align:center">Task master</h1>
+        <h1 style="text-align:center">Task master by AnkurAlpha</h1>
+            <img src="{{ url_for('static', filename='images/AnkurAlpha_logo.png')}}"
+                 alt="AnkurAlpha logo" class="AnkurAlpha_logo">
         {% if tasks|length < 1 %}
         <h4 style="text-align:center">No tasks</h4>
         {% else %}
@@ -29,9 +31,11 @@
             {% endfor %}
         </table>
         {% endif %}
-        <form action="/" methods="POST">
-            <input type="text" name="content" id="content">
-            <input type="submit" value="Add Task">
-        </form>
+        <div class="form">
+            <form action="/" method="POST">
+                <input type="text" name="content" id="content">
+                <input type="submit" value="Add Task">
+            </form>
+        </div>
     </div>
     {% endblock %}
