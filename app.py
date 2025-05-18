@@ -71,4 +71,6 @@ def update(id):
 
 if __name__ == "__main__":
     # if there is some error then it will pop up on the page
-    app.run(debug=False)
+    # app.run(debug=False)
+    # to deploy on vercel
+    app.run()
